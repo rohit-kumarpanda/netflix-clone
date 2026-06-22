@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: black;
+}
+.main{
+    /* width:100%; */
+    height:80vh;
+    background-image: url(background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size:max(1400px,100vw);
+    
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;  /*It is used to make the bg on the top*/
+    top: 0;
+}
+
+nav{
+    padding: 10px;
+    max-width: 77vw;
+    margin: auto;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px
+}
+
+nav img{
+    color: red;
+    height: 39px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10; 
+}
+
+.intro{
+    color: white;
+    height: calc(100% - 72px); /*Used to avoid the padding issue due to nav bar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    font-family: "Martel Sans", sans-serif;
+    font-style: normal;
+    gap: 10px;
+    padding:0 30px;
+    
+}
+
+.intro> :first-child{
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.intro :nth-child(2){
+    font-size: 20px;
+    font-weight: 500px;
+    text-align: center;
+}
+
+.intro :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* .separation{
+    height: 5px;
+    background-color: red;
+} */
+
+.separation {
+  height: 50px;
+  border-top: 4px solid transparent;
+  border-radius: 50% 50% 0 0;
+  background:
+    radial-gradient(
+      ellipse at center top,
+      rgba(0, 40, 255, 0.5),
+      transparent 70%
+    ),
+    #000;
+  position: relative;
+}
+
+.separation::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2px;
+  height: 4px;
+  border-radius: 100%;
+  background: linear-gradient(
+    90deg,
+    #ff006e,
+    #6c63ff,
+    #ff006e
+  );
+}
+
+.btn{
+    padding: 3px 8px;
+    height: 35px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.eng {
+    background-color: rgba(2, 2, 2, 0.286);
+    color: white;
+    padding: 0px 26px;
+    font-size: 14px;
+}
+.main input{
+    font-size: 24px;
+    height: 45px;
+    /* padding: 3px 10px; */
+    padding: 0 30px; 
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #1c1c1d52;
+    color: white;
+}
+.red-btn{
+    background-color: red;
+    color: white;
+    /* height: 30px; */
+    padding: 3px 10px;
+    text-align: center;
+    
+}
+.loginbtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-sn{
+    height: 35px;
+    font-size: 14px;
+}
+
+.get-started{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
