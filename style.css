@@ -39,7 +39,7 @@ nav{
 }
 
 nav img{
-    color: red;
+    
     height: 39px;
     position: relative;
     z-index: 10;
@@ -124,12 +124,15 @@ nav button{
     background-color: white;
     font-weight: bold;
     border-radius: 5px;
+    /* border-color: transparent; */
 }
 .eng {
     background-color: rgba(2, 2, 2, 0.286);
     color: white;
     padding: 0px 26px;
     font-size: 14px;
+    border-color: rgba(255, 255, 255, 0.528) ;
+    border-width: 1px;
 }
 .main input{
     font-size: 24px;
@@ -140,6 +143,7 @@ nav button{
     font-size: 16px;
     background-color: #1c1c1d52;
     color: white;
+    border-color: rgba(255, 255, 255, 0.666)
 }
 .red-btn{
     background-color: red;
@@ -147,6 +151,7 @@ nav button{
     /* height: 30px; */
     padding: 3px 10px;
     text-align: center;
+    border: transparent;
     
 }
 .loginbtns{
@@ -164,4 +169,96 @@ nav button{
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
+}
+
+.trend{
+    color: white;
+    font-size: 24px;
+    font-family:"Martel Sans", sans-serif;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 77vw;
+}
+
+.trendrow{
+    display: flex;
+    margin: auto;
+    max-width: 77vw;
+    height: 280px;
+    gap: 56px;
+    /* justify-content: space-between; */
+    overflow-x: auto;
+    scrollbar-width: none;
+
+
+}
+
+.trendcard {
+    /* position:relative; */
+    border-color: white;
+    height: 250px;
+    position: relative;
+    /* min-width: 220px; */
+    /* object-fit: cover; */
+    /* height: 320px; */
+    
+    /* flex-shrink: 0; */
+    /* transition: transform 0.3s ease; */
+}
+
+.trendcard img{
+    height: 230px;
+    border-radius: 6px;
+}
+
+.trendcard:hover{
+    transform:
+        rotateY(-8deg)
+        rotateX(4deg)
+        scale(1.08);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.5),
+        0 0 30px rgba(255,255,255,.08);
+}
+
+.rank{
+    /* position: absolute; */
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    /* position: inherit; */
+    /* font-size: 99px; */
+    
+}
+
+.features{
+    margin: auto;
+    padding-top: 20px;
+    max-width: 77vw;
+    height: 500px;
+    font-family:"Martel Sans", sans-serif;
+    background-color: rgb(18, 122, 214);
+    
+}
+.to-join{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* gap: 10px; */
+}
+.cardid{
+    background-color: #ff006e;
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 230px; */
+    width: 40px;
 }
